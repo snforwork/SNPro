@@ -9,7 +9,7 @@ public class JavaChapter03 {
 		// input 総額
 		// output 各額度の枚数
 		int money = 999;
-
+//test
 		if (true) {
 			// true の場合、実行
 		} else {
