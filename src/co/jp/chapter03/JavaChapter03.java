@@ -11,7 +11,7 @@ public class JavaChapter03 {
 		int money = 999;
 
 		if (true) {
-			// true の場合、実行
+			// true の場合、実行111
 		} else {
 			// falseの場合、実行
 		}
