@@ -12,6 +12,14 @@ public class JavaChapter03 {
 
 		if (true) {
 			// true の場合、実行
+
+
+
+
+
+
+
+			//  XXXXXXXXXXXXX
 		} else {
 			// falseの場合、実行
 		}
