@@ -77,6 +77,37 @@ public class JavaChapter01 {
 		}
 		System.out.println("ページ数：" + page);
 
+
+
+		//1
+		int A;
+		//2
+		A = 10;
+		//3
+		String B = "";
+		//4
+		//String B = 2;
+        //5
+		int C = 100;
+		C = 120;
+		System.out.println(C);
+
+		//質問１
+		int I = 10;
+		int N = I%5;
+		System.out.println(N);
+
+		//質問２
+		//a > 10 a = 11;a < 10 a = 0;
+
+		//質問３
+	    // ==
+
+		//質問４
+		//boolean true false
+
+
+
 	}
 
 }
