@@ -107,6 +107,32 @@ public class JavaChapter01 {
 		//boolean true false
 
 
+		//Q1 N = 0;
+
+		//Q2 aq2 = aq2 > 10 ? 11 : 0;
+
+		int aq2 = 0;
+		//1
+		aq2 = aq2 > 10 ? 11 : 0;// かバレージ問題あり
+		//2 dead code デッド.コード
+		if(true) {
+			aq2 = 11;//true
+		}else
+		{
+			aq2 = 0;//false
+		}
+
+		String strtest = "12\\\\3";
+		System.out.println(strtest);
+
+
+		String strA = "123";
+		String strB = new String("123");
+
+		System.out.println(strA == strB);//Stringの場合、＝＝比較、アドレス、＆バリュー
+		System.out.println(strA.equals(strB));//バリューのみ比較
+
+
 
 	}
 
