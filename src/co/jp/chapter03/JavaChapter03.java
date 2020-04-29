@@ -9,25 +9,25 @@ public class JavaChapter03 {
 
         //03宿題
         //質問１
-		   int a = 56;
-		   int A;
-		   int B;
-		   int C;
-		   int D;
-		   int E;
-		   System.out.println("成績ランキング判断。入力値=" + a);
-
-		   if(a>=90) {
-			   System.out.println("成績ランキング判断。入力値=" + "A");
-		   }else if(a>=80&&a<90){
-			   System.out.println("成績ランキング判断。入力値=" + "B");
-		   }else if(a>=70&&a<80){
-			   System.out.println("成績ランキング判断。入力値=" + "C");
-		   }else if(a>=60&&a<70){
-			   System.out.println("成績ランキング判断。入力値=" + "D");
-		   }else{
-			   System.out.println("成績ランキング判断。入力値=" + "E");
-		   }
+//		   int a = 56;
+//		   int A;
+//		   int B;
+//		   int C;
+//		   int D;
+//		   int E;
+//		   System.out.println("成績ランキング判断。入力値=" + a);
+//
+//		   if(a>=90) {
+//			   System.out.println("成績ランキング判断。入力値=" + "A");
+//		   }else if(a>=80&&a<90){
+//			   System.out.println("成績ランキング判断。入力値=" + "B");
+//		   }else if(a>=70&&a<80){
+//			   System.out.println("成績ランキング判断。入力値=" + "C");
+//		   }else if(a>=60&&a<70){
+//			   System.out.println("成績ランキング判断。入力値=" + "D");
+//		   }else{
+//			   System.out.println("成績ランキング判断。入力値=" + "E");
+//		   }
 
 
 		   //質問２
@@ -71,7 +71,7 @@ public class JavaChapter03 {
 //			   }
 //
 		   //before
-		   System.out.println("loop start");
+//		   System.out.println("loop start");
 
 		   //loop 初始值；终了条件；自增减变数  i++ == i=i+1
 
@@ -147,50 +147,89 @@ public class JavaChapter03 {
 //		   }
 
 
-		   int money = 3348;
-		   int m500 = 0;
-		   int m100 = 0;
-		   int m50 = 0;
-		   int m10 = 0;
-		   int m5 = 0;
-		   int m1 = 0;
-		   for (;;) {
-				// 500
-				if (money >= 500 && money % 500 != 0 ) {
-					m500 = money / 500;
-					money = money % 500;
-					// 100
-				} else if (money >= 100 && money % 100 != 0) {
-					m100 = money / 100;
-					money = money % 100;
-					// 50
-				} else if (money >= 50 && money % 50 != 0) {
-					m50 = money / 50;
-					money = money % 50;
-					// 10
-				} else if (money >= 10 && money % 10 != 0) {
-					m10 = money / 10;
-					money = money % 10;
-					// 5
-				} else if (money >= 5 && money % 5 != 0) {
-					m5 = money / 5;
-					money = money % 5;
-					// 1
-				} else if (money >= 1) {
-					m1 = money / 1;
-					money = money % 1;
-				} else {
-					break;
-				}
-			}
+//		   int money = 3348;
+//		   int m500 = 0;
+//		   int m100 = 0;
+//		   int m50 = 0;
+//		   int m10 = 0;
+//		   int m5 = 0;
+//		   int m1 = 0;
+//		   for (;;) {
+//				// 500
+//				if (money >= 500 && money % 500 != 0 ) {
+//					m500 = money / 500;
+//					money = money % 500;
+//					// 100
+//				} else if (money >= 100 && money % 100 != 0) {
+//					m100 = money / 100;
+//					money = money % 100;
+//					// 50
+//				} else if (money >= 50 && money % 50 != 0) {
+//					m50 = money / 50;
+//					money = money % 50;
+//					// 10
+//				} else if (money >= 10 && money % 10 != 0) {
+//					m10 = money / 10;
+//					money = money % 10;
+//					// 5
+//				} else if (money >= 5 && money % 5 != 0) {
+//					m5 = money / 5;
+//					money = money % 5;
+//					// 1
+//				} else if (money >= 1) {
+//					m1 = money / 1;
+//					money = money % 1;
+//				} else {
+//					break;
+//				}
+//			}
+//
+//
+//		   System.out.println("500円のコインが["+m500+"]枚です");
+//		   System.out.println("500円のコインが["+m100+"]枚です");
+//		   System.out.println("500円のコインが["+m50+"]枚です");
+//		   System.out.println("500円のコインが["+m10+"]枚です");
+//		   System.out.println("500円のコインが["+m5+"]枚です");
+//		   System.out.println("500円のコインが["+m1+"]枚です");
+
+		   //宿題 while /do while
 
 
-		   System.out.println("500円のコインが["+m500+"]枚です");
-		   System.out.println("500円のコインが["+m100+"]枚です");
-		   System.out.println("500円のコインが["+m50+"]枚です");
-		   System.out.println("500円のコインが["+m10+"]枚です");
-		   System.out.println("500円のコインが["+m5+"]枚です");
-		   System.out.println("500円のコインが["+m1+"]枚です");
+//		   int i = 53;
+//		   while(i > 38) {
+//			   System.out.println(i);
+//			   i--;
+//		   }
+
+
+		   int i = 53;
+		   do {
+			   System.out.println(i);
+			   i--;
+		   }while(i>38);
+
+
+		   //宿題 swich
+
+		   int a = 56;
+		   switch (a / 10){
+			   case 10:
+			   case 9:
+				   System.out.println("成績:" + "A");
+				   break;
+			   case 8:
+				   System.out.println("成績:" + "B");
+				   break;
+			   case 7:
+				   System.out.println("成績:" + "C");
+				   break;
+			   case 6:
+				   System.out.println("成績:" + "D");
+				   break;
+			   default:
+	               System.out.println("成績:" + "E");
+
+		   }
 
 
 
