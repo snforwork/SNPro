@@ -3,6 +3,7 @@ package co.jp.chapter01;
 public class JavaChapter01 {
 
 	public static void main(String[] args) {
+
 		// TODO 自動生成されたメソッド・スタブ
 
 		// 1, int 整型　1,2,3,4,5,6
@@ -76,6 +77,27 @@ public class JavaChapter01 {
 			page = a1 / a2;
 		}
 		System.out.println("ページ数：" + page);
+
+
+
+
+
+		// Q1 N=0
+
+		// Q2     aq2 = aq2 > 10 ? 11 : 0;
+
+		int aq2 = 0;
+		// 1
+		aq2 = aq2 > 10 ? 11 : 0;//　カバレージ問題ある
+		// 2   dead code デッド・コード
+		if (true) {
+			aq2 = 11; // true
+		} else {
+			aq2 = 0; // false
+		}
+
+		String strtest = "12\\\\3";
+		System.out.println(strtest);
 
 	}
 
