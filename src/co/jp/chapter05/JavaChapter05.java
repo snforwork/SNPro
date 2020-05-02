@@ -107,22 +107,53 @@ public class JavaChapter05 {
 		System.out.println(Arrays.toString(arr7));
 		System.out.println(loopCount7);
 
-
 		// 8
-		int n = 5;
-		int[][] a = new int[n][n];
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < i; j++) {
-				if(j==0||j==i) {
-					a[i][j]=1;
-				}else {
-					a[i][j]=a[i-1][j-1]+a[i-1][j];
+//		int n = 5;
+//		int[][] a = new int[n][n];
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j < i; j++) {
+//				if (j == 0 || j == i) {
+//					a[i][j] = 1;
+//				} else {
+//					a[i][j] = a[i - 1][j - 1] + a[i - 1][j];
+//				}
+//			}
+//			System.out.println(Arrays.toString(a[i]));
+//		}
+
+		// TODO Auto-generated method stub
+		int[][] yoko = new int[10][10];
+		for (int i = 0; i < yoko.length; i++) {
+			yoko[i] = new int[i + 1];
+			for (int x = 0; x <= i; x++) {
+				if (x == 0 || i == x) {
+					yoko[i][x] = 1;
+				} else {
+					yoko[i][x] = yoko[i - 1][x] + yoko[i - 1][x - 1];
 				}
+				System.out.print(yoko[i][x]);
 			}
-			System.out.println(Arrays.toString(a[i]));
+			System.out.println();
 		}
 
-
+		int n = 10;
+		int[][] arrays = new int[n][];
+		for (int i = 0; i < arrays.length; i++) {
+			arrays[i] = new int[i + 1];
+			//左边打印空格，打印等腰三角形
+			for (int k = 0; k <= n - i; k++) {
+				System.out.print(" ");
+			}
+			for (int j = 0; j < arrays[i].length; j++) {
+				if (i == 0 || j == 0 || i == j) {
+					arrays[i][j] = 1;
+				} else {
+					arrays[i][j] = arrays[i - 1][j] + arrays[i - 1][j - 1];
+				}
+				System.out.print(arrays[i][j] + " ");
+			}
+			System.out.println();
+		}
 
 	}
 
