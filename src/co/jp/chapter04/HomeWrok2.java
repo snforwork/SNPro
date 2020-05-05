@@ -49,14 +49,17 @@ public class HomeWrok2 {
 			System.out.println("*******************");
 			//7 行列（2次元配列）の和と積を計算してください。
 			int[][] array2d = new int[][]{
-				 {1, 2, 3, 4},
-				 {21, 22, 23, 24} };
+				 {1, 2},
+				 {3,4} };
+			int[][] array4d = new int[][]{
+					 {5,6},
+					 {7,8} };
 				 int sum1 = 0; int num = 1;
-			for(int a = 0;a<4;a++) {
-             for(int b = 0; b<2;b++) {
+			for(int a = 0;a<array2d.length;a++) {
+             for(int b = 0; b<array4d.length;b++) {
 
-					sum1 = sum1+array2d[b][a];
-					num = num*array2d[b][a];
+					sum1 = sum1+array2d[a][b]+array4d[a][b];
+					num = num*array2d[a][b]*array4d[a][b];
              }
 
 			}

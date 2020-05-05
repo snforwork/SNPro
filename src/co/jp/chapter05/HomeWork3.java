@@ -77,20 +77,19 @@ public class HomeWork3 {
                 System.out.println("*******************");
 
                //6任意行列（２次元配列）の積を求める
-                int[][] array2d = new int[][]{
-   				 {1, 2, 3, 4},
-   				 {21, 22, 23, 24} };
-   				 int num1 = 1;
-   			for(int a1 = 0;a1<4;a1++) {
-                for(int b = 0; b<2;b++) {
+                int [][]arr6A = new int[][] {
+   	        	 {1,2},
+   	        	 {3,4}
+   	         };
+   	         int[][]arr6B = new int[][] {
+   	        	 {5,6},
+   	        	 {7,8}
+   	         };{
+   	         for(int i= 0;i<arr6A.length;i++) {
+   	        	 for(int j = 0;j<arr6B.length;j++) {
+   	        		 System.out.print("配列の積は："+arr6A[i][j]*arr6B[i][j]+",");
 
-
-   					num1 = num1*array2d[b][a1];
-                }
-
-   			}
-
-   			System.out.println("配列の積は："+num1);
+   	        	 }}}
 
    		  System.out.println("*******************");
 
@@ -113,19 +112,42 @@ public class HomeWork3 {
               System.out.println();
 
              //8 lv10のパスカルの三角型を出力してください
-              int max1 = 10;
-		        //控制行数
-		        for(int i = 1; i<=10 ; i++) {
-		            //控制空格
-		            for (int j = 1; j <= max1 - i; j++)
+//              int max1 = 10;
+//		        //控制行数
+//		        for(int i = 1; i<=10 ; i++) {
+//		            //控制空格
+//		            for (int j = 1; j <= max1 - i; j++)
+//		                System.out.print(" ");
+//		                //控制星数
+//		                for (int k = 1; k <= i * 2 - 1; k++)
+//		                    System.out.print("*");
+//		                    System.out.println();
+//		        }
+
+
+
+				int n = 10;
+				int[][] arrays = new int[n][];
+		        for (int i = 0; i < arrays.length; i++) {
+		            arrays[i] = new int[i + 1];
+		            //左边打印空格，打印等腰三角形
+		            for(int k = 0; k<= n-i; k++ ){
 		                System.out.print(" ");
-		                //控制星数
-		                for (int k = 1; k <= i * 2 - 1; k++)
-		                    System.out.print("*");
-		                    System.out.println();
-		        }
+		            }
+		            for (int j = 0; j < arrays[i].length; j++) {
+
+		                if (i == 0 || j == 0 || i == j) {
+		                    arrays[i][j] = 1;
+		                } else {
+		                    arrays[i][j] = arrays[i - 1][j] + arrays[i - 1][j - 1];
+		                }
+
+		                System.out.print(arrays[i][j] + " ");
+		            }
+		            System.out.println();
 
 
+			}
 
 
 
