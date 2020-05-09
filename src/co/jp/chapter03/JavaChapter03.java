@@ -9,7 +9,7 @@ public class JavaChapter03 {
 		JavaChapter03 obj = new JavaChapter03();
 
 
-        //2020.0502
+        //2020.05.02
         //06.関数
         String word ="x !Hello world! x";
         obj.spcak(word);
