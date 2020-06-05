@@ -7,6 +7,10 @@ public class JavaChaper09 {
          Dog dog = new Dog();
          dog.eat();
          dog.say();
+
+         Cat cat = new Cat();
+         cat.eat();
+         cat.say();
 	}
 
 }
