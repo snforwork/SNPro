@@ -6,7 +6,7 @@ public class JavaChapter05 {
 		// TODO 自動生成されたメソッド・スタブ
 
 
-		//2020.05.23(1)
+		//2020.05.23(08)
 		int total = 20;
 		int zan = 0;
 
