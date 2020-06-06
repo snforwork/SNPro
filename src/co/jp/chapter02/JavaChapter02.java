@@ -8,7 +8,7 @@ public class JavaChapter02 {
         // TODO 自動生成されたメソッド・スタブ
 
 
-		//2020.04.18
+		//2020.04.18(04+05)
         //1.転釈
         String strtest="12\\\\3";
         System.out.println("String型:"+strtest);
