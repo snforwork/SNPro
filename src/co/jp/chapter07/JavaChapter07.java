@@ -17,7 +17,7 @@ public class JavaChapter07 {
 		// TODO 自動生成されたメソッド・スタブ
 
 
-		//2020.05.30
+		//2020.05.30(11)
 		//1.List
 		String str;
 		int[] arr = new int[10];
