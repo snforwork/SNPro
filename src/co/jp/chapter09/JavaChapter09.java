@@ -2,8 +2,15 @@ package co.jp.chapter09;
 
 public class JavaChapter09 {
 
-	public JavaChapter09() {
-		// TODO 自動生成されたコンストラクター・スタブ
+	public static void main(String[] args) {
+		// TODO 自動生成されたメソッド・スタブ
+         Dog dog = new Dog();
+         dog.eat();
+         dog.say();
+
+         Cat cat = new Cat();
+         cat.eat();
+         cat.say();
 	}
 
 }
