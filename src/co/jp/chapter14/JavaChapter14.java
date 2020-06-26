@@ -7,7 +7,6 @@ public class JavaChapter14 {
 
 		System.out.println();
 		System.out.println();
-		System.out.println();
 
 	}
 
