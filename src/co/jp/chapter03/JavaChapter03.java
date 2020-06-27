@@ -1,150 +1,71 @@
 package co.jp.chapter03;
 
-import co.jp.chapter03.JavaChapter03;
-
 public class JavaChapter03 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-		JavaChapter03 obj = new JavaChapter03();
 
 
-        //2020.05.02(06)
-        //06.関数
-        String word ="x !Hello world! x";
-        obj.spcak(word);
+		//2020.04.11(03)
+	    //03フロー制御――質問集
+	    //質問1
+	    //成績ランキング判断を作成する「90以上:A、80-89:B、70-79:C、60-69:D、60以下:E」
+	    int b1 = 56;
+	    System.out.println("成績ランキング判断、入力値:"+ b1);
+	    int a = 0;
+		//以下コードを完成してください。
+	    if(a>=90){
+	    	System.out.println("A");
+	    }else if(80<=a&&a<90){
+	    	System.out.println("B");
+	    }else if(70<=a&&a<80){
+	    	System.out.println("C");
+	    }else if(60<=a&&a<70){
+	    	System.out.println("D");
+	    }else{
+	    	System.out.println("E");
+	    }
 
-        int a = 10;
-        int b = 100;
-        String c = "111";
-        obj.sum(1,2,0);
-        obj.sum(a,b,c);
+	    //質問2
+	    //日本のコインを1円、5円、10円、100円、500円があります。3340円のコイン数をまとめください。
+	    //input　統額
+	    //output 各額度の枚数
+	    int money = 3340;
+	    int k = 0;
+	    int m500 = 0;
+        int m100 = 0;
+        int m50 = 0;
+        int m10 = 0;
+        int m5 = 0;
+	    int m1 = 0;
+		if(money%500>0) {
+			k = money%500;
+		    m500 = money/500;
+		    System.out.println("500円:" + m500 + "枚");
+		}if(k%100>0){
+				   m100 = k/100;
+				   k = k%100;
+				   System.out.println("100円:" + m100 + "枚");
+		}if(k%50>0){
+				   m50 = k/50;
+				   k = k%50;
+				   System.out.println("50円:" + m50 + "枚");
+		}if(k%10>0){
+				   m10 = k/10;
+				   k = k%10;
+				   System.out.println("10円:" + m10 + "枚");
+		}if(k%5>0){
+				   m5 = k/5;
+				   k = k%5;
+				   System.out.println("5円:" + m5 + "枚");
+		}if(k%1>0){
+				   m1 = k/1;
+				   k = k%1;
+				   System.out.println("1円:" + m1 + "枚");
+				   }
 
-        int c1 = 0;
-        obj.sum(1,2,c1);
-        System.out.println(c1);
 
-        int pay = 6700;
-        double tax = 0.1;
-        obj.taxKeisan(pay,tax);
 
-        String strTax = obj.taxKeisan(pay,tax);
-        obj.spcak(strTax);
-
-        int x = 1;
-        String y = "10%";
-        obj.taxKeisan(x,y);
-    }
-
-	private void taxKeisan(int x, String y) {
-		// TODO 自動生成されたメソッド・スタブ
 	}
-
-	private void sum(int a, int b, String c) {
-		// TODO 自動生成されたメソッド・スタブ
-	}
-
-	private void sum(int i, int j, int k) {
-		// TODO 自動生成されたメソッド・スタブ
-	}
-
-	private static String taxKeisan(int pay, double tax) {
-		// TODO 自動生成されたメソッド・スタブ
-
-        System.out.println(pay*tax);
-		return null;
-	}
-
-	void spcak(String str){
-		System.out.println(str);
-	}
-
-    void sum(int a,int b){
-    	System.out.println(a+b);
-    }
-
-
-        //根計算ロジック
-    static String taxKeisan1(int pay, double tax) {
-    	String rsault = String.valueOf(pay * tax);
-    	return rsault;
-    }
-
-
-        //値転換後
-    static String taxKeisan1(int pay, String tax) {
-    	return taxKeisan(pay, Double.valueOf(tax));
-    }
-
-    void spcak1(String str) {
-    }
-
-    void sum() {
-    }
-
-    void sum(int a) {
-    }
-
-    void sum1(int a, int b, int c) {
-    	c = a + b;
-    }
-
-
-        //関数のオーバーロード
-    public void sampleMethod() {}
-    //public void sampleMethod(int a) {} // 引数
-    //public void sampleMethod(int a, int b) {} //
-    //public void sampleMethod(int c) {} // NG不可、メソッド#2と重複
-    //public void sampleMethod(float a) {} // OK 引数の型が異なる
-    //public void sampleMethod(char c) {return 1;} //NG不可、メソッド#1到着
-
-
-        //06関数――質問集
-        //質問1
-    //public static void main(String[] args)
-        //修飾子、返却型、関数名、引数
-
-        //質問2
-    public static void max(int[] datas) {
-    	System.out.println();
-    }
-
-        //質問3
-    public static class Kicker{
-    	private static void sayHello(String y) {
-    		y = "Hello world";
-    	}
-    	public static void main(String args[]) {
-    		String x = null;
-    		sayHello(x);
-    		System.out.println();
-    	}
-    }
-
-        //質問4
-    public static class Kicker1{
-    	private static void fillArray(String[] array) {
-    		array[0] = "value2";
-    	}
-    	public static void main(String args[]) {
-    		String[] array = new String[] {"value1"};
-    		fillArray(array);
-        	System.out.println(array[0]);
-    	}
-    }
-
-        //質問5
-    public static class Kicker2{
-    	private static void fillArray(String[] array) {
-    		array = new String[] {"1","2"};
-    	}
-    	public static void main(String args[]) {
-    		String[] array = null;
-    		fillArray(array);
-    		System.out.println(array == null);
-    	}
-    }
-
-
 
 }
