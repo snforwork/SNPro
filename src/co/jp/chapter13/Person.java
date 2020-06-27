@@ -2,6 +2,7 @@ package co.jp.chapter13;
 
 public class Person {
 
+	
 	public Person(String string, int i, String string2) {
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
