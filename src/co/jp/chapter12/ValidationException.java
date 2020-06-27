@@ -9,8 +9,8 @@ package co.jp.chapter12;
  */
 
 public class ValidationException extends Exception {
-	 private String name; // елещер├√│╞
-	 private String message; // еиещй`есе├е╗й`е╕
+	 private String name;
+	 private String message;
 
 
 }
