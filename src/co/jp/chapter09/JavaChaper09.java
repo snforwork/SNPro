@@ -4,6 +4,9 @@ public class JavaChaper09 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
+//		質問１９︓以下Animalクラスを継承して以下２クラスを作成してください。
+//		1. クラス Cat。sayHelloメソッドをオーバーライドして、System.out.println(“ニャー“);
+//		2. クラス Dog。sayHelloメソッドをオーバーライドして、System.out.println(“ワン“);
          Dog dog = new Dog();
          dog.eat();
          dog.say();
@@ -35,6 +38,16 @@ public class JavaChaper09 {
 //         質問１７︓サブクラス＆アクセス制御（ public, protected ）。
 //         質問１８︓サブクラスと親クラス同じメソッド名かつメソッドの引数は⼀致する場合、「オーバー ライド」となります。
 //
+//         質問２０︓以下コードをIS-A関係で説明してください。
+//         Animal v0 = new Animal(); // v0 は Animal 型
+//         Animal v1 = new Cat("a cat"); // v1 は Cat 型, v1 は Animal 型
+//         Animal v2 = new Dog("a dog"); // v2 は Dog 型, v2 は Animal 型
+//         Cat v3 = new Cat(""); // OK
+//         Dog v4 = new Dog(""); // OK
+//         Cat v5 = new Animal(""); // NG
+//
+
+
 	}
 
 }
