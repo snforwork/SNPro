@@ -90,7 +90,26 @@ public class JavaChapter07{
 				//System.out.println(obj3.getSex());
 			//}
 
+		//07OOP-その1――質問集
+        //質問1
+	    //public class Pet {
+	    //public String name;
+		//this.name = value;
+		//}
+		// Kicker.java
+		//Pet cat = new Pet();
+		//cat.setAge(1234);
+		//}
+		//}
+
+		//質問2
+	    int[] arr = new int[] {1,5,8,6,2};
+		System.out.println(Math.max(arr));
+		System.out.println(Math.min(arr));
+		System.out.println(Math.ave(arr));
 
 
 	}
+
+	
 }
