@@ -45,12 +45,6 @@ public class JavaChapter09 {
 		//質問１９︓以下Animalクラスを継承して以下２クラスを作成してください。
 		//1. クラス Cat。sayHelloメソッドをオーバーライドして、System.out.println(“ニャー“);
 		//2. クラス Dog。sayHelloメソッドをオーバーライドして、System.out.println(“ワン“);
-		//質問２０︓以下コードをIS-A関係で説明してください。
-		//Animal v0 = new Animal(); // v0 は Animal 型
-		//Animal v2 = new Dog("a dog"); // v2 は Dog 型, v2 は Animal 型
-		//Cat v3 = new Cat(""); // OK
-		//Dog v4 = new Dog(""); // OK
-		//Cat v5 = new Animal(""); // NG
 
 
 
