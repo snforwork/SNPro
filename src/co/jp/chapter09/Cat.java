@@ -13,7 +13,6 @@ public class Cat {
 		this.age =age;
 		this.sex =sex;
 		this.name =name;
-		this.name =name;
 	}
 	public Cat(String a, int i, int j) {
 		// TODO 自動生成されたコンストラクター・スタブ

@@ -7,8 +7,6 @@ public class Animal {
 	String name;
 	int age;
 	String sex;
-	String sex1;
-
 	Animal(String type,String name,int age,String sex){
 		this.type =type;
 		this.age =age;
