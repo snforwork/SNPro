@@ -107,29 +107,66 @@ public class JavaChapter07 {
 
 
 
-		 /**質問１*/
-   		//定義されないメソッドsetAge(1234)をアクセスする。
-//   		public class Pet {
-//   			public String name;
-//   			public void setName(String value) {
-//   			this.name = value;
-//   			}
-//   			}
-//   			// Kicker.java
-//   			public class Kicker {
-//   			public static void main(String...args) {
-//   			Pet cat = new Pet();
-//   			cat.setAge(1234);
-   //
-//   			}
-//   			}
+		//練習1
+				//Human xiaoMing = new Human("xiaoMing",10,1);
+			    //set 無し
+				//System.out.println("xiaoMing count:"+Human.count);
+				//System.out.println(xiaoMing.getName());
+				//System.out.println(xiaoMing.getAge());
+				//if(xiaoMing.getSex() ==1) {
+				//	System.out.println("男");
+				//}else if(xiaoMing.getSex() ==2){
+				//	System.out.println("女");
+				//}else {
+				//	System.out.println(xiaoMing.getSex());
+				//}
 
-//   	/**質問２*/
-   	int[] arr = new int[] {1,5,8,6,2};
-   		System.out.println(Math.max(arr));
-   		System.out.println(Math.min(arr));
-   		System.out.println(Math.ave(arr));
+				//練習2
+				//Human obj2 = new Human("希拉里克林顿",2);
+		        //System.out.println(obj2.getName());
+		        //if(obj2.getSex() ==1) {
+		  		//   System.out.println("男");
+		  	    //}else if(obj2.getSex() ==2){
+		  		//   System.out.println("女");
+		  	    //}else {
+		  		//   System.out.println(obj2.getSex());
+			    //}
 
+				//練習3
+				//Animal obj3 = new Animal();
+				//obj3.setName("Cat");
+			    //obj3.setAge(2);
+			    //obj3.setSex(1);
+			    //obj3.setLegs(3);
+
+				//System.out.println(obj3.getName());
+				//System.out.println(obj3.getAge());
+				//System.out.println(obj3.getSex());
+				//if(obj3.getSex() == 1) {
+					//System.out.println("雄");
+					//}else if(obj3.getSex() == 0) {
+						//System.out.println("雌");
+					//}else {
+						//System.out.println(obj3.getSex());
+					//}
+
+				//07OOP-その1――質問集
+		        //質問1
+			    //public class Pet {
+			    //public String name;
+				//this.name = value;
+				//}
+				// Kicker.java
+				//Pet cat = new Pet();
+				//cat.setAge(1234);
+				//}
+				//}
+
+				//質問2
+			    int[] arr = new int[] {1,5,8,6,2};
+				System.out.println(Math.max(arr));
+				System.out.println(Math.min(arr));
+				System.out.println(Math.ave(arr));
 
 
 
