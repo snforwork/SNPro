@@ -4,13 +4,13 @@ public class JavaChapter09 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-         Dog dog = new Dog();
-         dog.eat();
-         dog.say();
+//         Dog dog = new Dog();
+//         dog.eat();
+//         dog.say();
 
-         Cat cat = new Cat();
-         cat.eat();
-         cat.say();
+//         Cat cat = new Cat();
+//         cat.eat();
+//         cat.say();
 
 
 //       質問１︓クラス（Class）とは︖クラス定義⽤のキーワードは「 class 」である。
@@ -32,6 +32,12 @@ public class JavaChapter09 {
 //               3. - private
 //       質問１１︓静的のメンバの定義するキーワード（修飾⼦）は static 。
 //       質問１２︓静的のメンバアクセス時、インスタンス化不要。アクセス⽅法は「クラス名.静的のメン バ」
+//       質問１３︓クラス「Animal」を定義して、インスタンス化しオブジェクト cat を作成します。変数
+//         catのsayHello()メソッドを呼び出してください。
+         Cat cat = new Cat("HelloKitty",10,1);
+         System.out.println("cat's name is " + cat.getName());
+//       質問１４︓以下１⾏を解釈してください。1 System.out.println(new Animal("cat").getName());
+//        System.out.println(new Animal("cat",0,0).get.name);
 //       質問１５︓クラス継承する⽤キーワードは「 extends 」
 //       質問１６︓継承しているクラス。上位クラスは「親クラス」・「スーパークラス」。下位クラスは 「サブクラス」と呼びます。
 //       質問１７︓サブクラス＆アクセス制御（ public, protected ）。

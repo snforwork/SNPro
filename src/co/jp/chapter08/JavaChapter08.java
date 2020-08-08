@@ -33,7 +33,7 @@ public class JavaChapter08 {
 
 		zan = total - Animal.count;
 
-		System.out.println(zan);
+//		System.out.println(zan);
 
 
 
@@ -42,30 +42,30 @@ public class JavaChapter08 {
 				//08OOP-その２――質問集
 				//質問1
 				//以下コードの出力するを回答してください。
-				String x = "a";
-				String y = "a";
-				System.out.println(x == y);//false
-				System.out.println(x.equals(y));//true
-				String empty = "";
-				String nullString = null;
+//				String x = "a";
+//				String y = "a";
+//				System.out.println(x == y);//true
+//				System.out.println(x.equals(y));//true
+//				String empty = "";
+//				String nullString = null;
 			    //System.out.println(nullString.equals(empty));//false
 
 				//質問2
 				//以下コードの出力するを回答してください。
-				class Employee {
-			    private String id;
-				public Employee(String id) {
-				this.id = id;
-				}
-				@Override
-				public boolean equals(Object another) {
-				if (another instanceof Employee) {
-					Employee an = (Employee) another;
-					return an.id.equals(id);
-					}
-					return false;
-				}
-				}
+//				class Employee {
+//			    private String id;
+//				public Employee(String id) {
+//				this.id = id;
+//				}
+//				@Override
+//				public boolean equals(Object another) {
+//				if (another instanceof Employee) {
+//					Employee an = (Employee) another;
+//					return an.id.equals(id);
+//					}
+//					return false;
+//				}
+//				}
 				// Kicker.java
 				//public class Kicker {
 				//public static void main(String...args) {

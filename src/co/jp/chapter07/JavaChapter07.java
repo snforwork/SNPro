@@ -1,5 +1,7 @@
 package co.jp.chapter07;
 
+import java.util.Arrays;
+
 public class JavaChapter07 {
 
 	public JavaChapter07() {
@@ -29,40 +31,40 @@ public class JavaChapter07 {
 //			System.out.println(objname.getSex());
 //		}
 		// 3 引数
-		System.out.println("0 count:" + Human.total());
-
-		Human  trump = new Human("Trump",70,1);
-		System.out.println("Trump count:"+trump.count);
+//		System.out.println("0 count:" + Human.total());
+//
+//		Human  trump = new Human("Trump",70,1);
+//		System.out.println("Trump count:"+trump.count);
 
 //		set なし
 
 //		obj2.setName("HELLO KITTY");
-		System.out.println(trump.getName());
-		System.out.println(trump.getAge());
-		if(trump.getSex() == 1) {
-			System.out.println("男");
-		}else if(trump.getSex() == 2){
-			System.out.println("女");
-		}else {
-			System.out.println(trump.getSex());
-		}
+//		System.out.println(trump.getName());
+//		System.out.println(trump.getAge());
+//		if(trump.getSex() == 1) {
+//			System.out.println("男");
+//		}else if(trump.getSex() == 2){
+//			System.out.println("女");
+//		}else {
+//			System.out.println(trump.getSex());
+//		}
 
 		// 3 引数
-		Human  xiaoming = new Human("xiaoming",10,1);
-		System.out.println("xiaoming count:"+xiaoming.count);
+//		Human  xiaoming = new Human("xiaoming",10,1);
+//		System.out.println("xiaoming count:"+xiaoming.count);
 
 //		set なし
 
 //		obj2.setName("HELLO KITTY");
-		System.out.println(xiaoming.getName());
-		System.out.println(xiaoming.getAge());
-		if(xiaoming.getSex() == 1) {
-			System.out.println("男");
-		}else if(xiaoming.getSex() == 2){
-			System.out.println("女");
-		}else {
-			System.out.println(xiaoming.getSex());
-		}
+//		System.out.println(xiaoming.getName());
+//		System.out.println(xiaoming.getAge());
+//		if(xiaoming.getSex() == 1) {
+//			System.out.println("男");
+//		}else if(xiaoming.getSex() == 2){
+//			System.out.println("女");
+//		}else {
+//			System.out.println(xiaoming.getSex());
+//		}
 
 		//要素
 //		obj2.name = "Trump";
@@ -92,18 +94,18 @@ public class JavaChapter07 {
 //			System.out.println(obj3.getSex());
 //		}
 
-		Animal monkey = new Animal("monkey",2,1,4);
-
-
-		System.out.println(monkey.getName());
-		System.out.println(monkey.getAge());
-		if(monkey.getSex() == 1) {
-			System.out.println("雄");
-		}else if(monkey.getSex() == 2){
-			System.out.println("雌");
-		}else {
-			System.out.println(monkey.getSex());
-		}
+//		Animal monkey = new Animal("monkey",2,1,4);
+//
+//
+//		System.out.println(monkey.getName());
+//		System.out.println(monkey.getAge());
+//		if(monkey.getSex() == 1) {
+//			System.out.println("雄");
+//		}else if(monkey.getSex() == 2){
+//			System.out.println("雌");
+//		}else {
+//			System.out.println(monkey.getSex());
+//		}
 
 
 
@@ -163,15 +165,39 @@ public class JavaChapter07 {
 				//}
 
 				//質問2
-			    int[] arr = new int[] {1,5,8,6,2};
-				System.out.println(Math.max(arr));
-				System.out.println(Math.min(arr));
-				System.out.println(Math.ave(arr));
+//			    int[] arr = new int[] {1,5,8,6,2};
+//				System.out.println(Math.max(arr));
+//				System.out.println(Math.min(arr));
+//				System.out.println(Math.ave(arr));
+
+
+
+		        //1
+
+				int[] arr = {0,3,2,4,1,-1,-100};
+				System.out.println("sort 前"+Arrays.toString(arr));
+				System.out.println(JavaChapter07.max(arr));
+				System.out.println(arr[0]);
+				System.out.println("sort 後"+Arrays.toString(arr));
 
 
 
 
 
 	}
+
+				public static int max(int[] arr) {
+
+					int rtn;
+
+					int[] arrtemp = new int[arr.length];
+					for (int i =0;i<arr.length ;i++) {
+						arrtemp[i] = arr[i];
+					}
+					Arrays.sort(arrtemp);
+					return arrtemp[arrtemp.length-1];
+				}
+
+
 
 }
