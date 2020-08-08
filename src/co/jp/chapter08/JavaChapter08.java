@@ -40,8 +40,8 @@ public class JavaChapter08 {
 		//以下コードの出力するを回答してください。
 		String x = "a";
 		String y = "a";
-		System.out.println(x == y);//true
-		System.out.println(x.equals(y));//false
+		System.out.println(x == y);//false
+		System.out.println(x.equals(y));//true
 		String empty = "";
 		String nullString = null;
 	    //System.out.println(nullString.equals(empty));//false
