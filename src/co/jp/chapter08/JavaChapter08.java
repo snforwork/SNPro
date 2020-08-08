@@ -28,6 +28,7 @@ public class JavaChapter08 {
 
 		Cat cat = new Cat("HELLOKITTY",5,"メス");
 		cat.count();
+		cat.count();
 		Fish fish = new Fish("NIMO",1,"オス");
 		Brid brid = new Brid("UOI",10,"オス");
 

@@ -36,6 +36,7 @@ public class JavaChapter09 {
 //         catのsayHello()メソッドを呼び出してください。
          Cat cat = new Cat("HelloKitty",10,1);
          System.out.println("cat's name is " + cat.getName());
+         System.out.println("cat's name is " + cat.getName());
 //       質問１４︓以下１⾏を解釈してください。1 System.out.println(new Animal("cat").getName());
 //        System.out.println(new Animal("cat",0,0).get.name);
 //       質問１５︓クラス継承する⽤キーワードは「 extends 」
