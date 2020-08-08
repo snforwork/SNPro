@@ -18,6 +18,21 @@ public class JavaChapter09 {
 		cat.eat();
 		cat.say();
 
+		//宿題
+		//09OOP-その3――質問集
+		//質問2︓以下ソースに匿名クラスの利用する行は?
+		class Kicker{
+			public void main(String...args) {
+				new Thread() {
+					@Override
+					public void run() {
+						System.out.println("thread runnning...");
+					}
+				}.start();
+			}
+		}
+
+
 		//09OOP-練習問題――質問集
 		//質問１︓クラス（Class）とは︖クラス定義⽤のキーワードは「 class 」である。
 		//質問２︓クラスメンバ（Class member）の何種類ありますか。
