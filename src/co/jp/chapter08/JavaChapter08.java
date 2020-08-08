@@ -41,7 +41,7 @@ public class JavaChapter08 {
 		String x = "a";
 		String y = "a";
 		System.out.println(x == y);//true
-		System.out.println(x.equals(y));//true
+		System.out.println(x.equals(y));//false
 		String empty = "";
 		String nullString = null;
 	    //System.out.println(nullString.equals(empty));//false
