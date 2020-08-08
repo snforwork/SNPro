@@ -20,6 +20,17 @@ public class Math {
 			}
 		return sum/arr.length;
 		}
-
-
+	
+    public static int max1(int[] arr) {
+    	int rtn;
+    	int[] arrtemp = new int[arr.length];
+    	for(int i = 0; i < arr.length; i++) {
+    		arrtemp[i] = arr[i];
+    	}
+    	Arrays.sort(arrtemp);
+        return arrtemp[arrtemp.length-1];
+    }
+	
+    
 }
+    

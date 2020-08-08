@@ -1,5 +1,7 @@
 package co.jp.chapter07;
 
+import java.util.Arrays;
+
 import co.jp.chapter07.Human;
 
 public class JavaChapter07{
@@ -103,13 +105,29 @@ public class JavaChapter07{
 		//}
 
 		//質問2
-	    int[] arr = new int[] {1,5,8,6,2};
-		System.out.println(Math.max(arr));
-		System.out.println(Math.min(arr));
-		System.out.println(Math.ave(arr));
-
-
+	    //int[] arr = new int[] {1,5,8,6,2};
+		//System.out.println(Math.max(arr));
+		//System.out.println(Math.min(arr));
+		//System.out.println(Math.ave(arr));
+		
+		int[] arr = new int[] {100,0,5,8,6,-200};
+	    System.out.println("sort 前" + Arrays.toString(arr));
+	    System.out.println(Math.max(arr));
+	    System.out.println(Math.min(arr));
+	    System.out.println(arr[0]);
+        System.out.println("sort 後" + Arrays.toString(arr));
 	}
+        
+	    public static int max1(int[] arr) {
+        	int rtn;
+        	int[] arrtemp = new int[arr.length];
+        	for(int i = 0; i < arr.length; i++) {
+        		arrtemp[i] = arr[i];
+        	}
+        	Arrays.sort(arrtemp);
+            return arrtemp[arrtemp.length-1];
+        }
+        
 
 	
 }
