@@ -9,11 +9,19 @@ public static class getFlieType {
 
 
 	    //10文字列操作――質問集
+	    //質問1
+	    //以下3行文字列を「改行コード」と「,」を分割して2つペットオブジェクトを作成してください。
+	      //1. Petクラスを事前作成してください。
+	      //2. ペットのタイプは列挙型である： type = 0：猫、type = 1：犬
+	      //ペット病院用ペットマスタデータは以下通りです。（ファイルから読み取り不要）※トリム注意
+
+
+
 	    //質問2
 	    //Windowsは各ファイルの拡張子を持っています。例「新規ドキュメント.docx」の拡張子は「docx」である。メソッドを作成して、ファイルパス(String型)から拡張子を取得してください。
         public static String getFileType(String path) {
         	return path;
-	    // return ??
+        	// return ??
 	    }
 
         public static void main(String[] args)throws UnsupportedEncodingException  {
@@ -58,12 +66,12 @@ public static class getFlieType {
         //各現場は文字列に null又はempty判断要共通メソッドを実装しています。似ているメソッドを実装してください。
         //valueはnull or Empty判断してください。
         public static boolean isNull(String value) {
-	    if(value== null || "".equals(value) || "null".equals(value)) {
-	    	return true;
-	    	} else {
-	    	return false;
-	    	}
-	    }
+        	if(value== null || "".equals(value) || "null".equals(value)) {
+        		return true;
+        	} else {
+        		return false;
+        	}
+        }
 
 
 
