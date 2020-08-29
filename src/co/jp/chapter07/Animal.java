@@ -2,6 +2,7 @@ package co.jp.chapter07;
 
 public class Animal{
 
+
     //String name;
 	//int age;
 	//int sex;
@@ -68,5 +69,5 @@ public class Animal{
 
 	}
 
-	
+
 }

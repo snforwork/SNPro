@@ -3,6 +3,8 @@ package co.jp.chapter07;
 import java.util.Arrays;
 
 public class Math {
+
+
 	public static int max(int[] arr) {
 		Arrays.sort(arr);
         return arr[arr.length-1];
@@ -20,7 +22,7 @@ public class Math {
 			}
 		return sum/arr.length;
 		}
-	
+
     public static int max1(int[] arr) {
     	int rtn;
     	int[] arrtemp = new int[arr.length];
@@ -30,7 +32,7 @@ public class Math {
     	Arrays.sort(arrtemp);
         return arrtemp[arrtemp.length-1];
     }
-	
-    
+
+
 }
-    
+

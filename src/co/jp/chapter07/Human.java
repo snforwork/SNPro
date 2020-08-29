@@ -6,7 +6,7 @@ public class Human{
 	Human(String string, int i, int j){
 
 	}
-	
+
 	public Human(String string, int i) {
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
@@ -69,6 +69,7 @@ public class Human{
 	public char[] getName;
 	public char[] getAge;
 	public char[] getSex;
+
 	public int setSex() {
 		// TODO 自動生成されたメソッド・スタブ
 		return 0;
