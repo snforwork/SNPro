@@ -19,7 +19,7 @@ public class CSV {
 	      Person p3 = new Person("orange", 17, "male");
 
 	      //リスト化を行う
-	      List<Person> persons = new ArrayList();
+	      List<Person> persons = new ArrayList<Person>();
 	      persons.add(p1);
 	      persons.add(p2);
 	      persons.add(p3);
