@@ -9,6 +9,8 @@ package co.jp.chapter12;
  */
 
 
+        //質問2
+        //Validation Exceptionを作成して、ユーザー入力した値を検証します。該当は実際商用アプリで利用しています。
         //STEP1: ValidationException クラスを定義する
 public class ValidationException extends Exception {
 
