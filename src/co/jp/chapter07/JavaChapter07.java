@@ -88,5 +88,7 @@ public class JavaChapter07 {
 		}else {
 			System.out.println(dog.getSex());
 		}
+		
+		
 	}
 }

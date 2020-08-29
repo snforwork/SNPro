@@ -7,7 +7,10 @@ public class HomeWork8 {
 /**質問１**/
 		String x = "a";
 		String y = "a";
-		System.out.println(x == y); // false:メモリアドレスは一致しません。
+		if(x == y){
+			System.out.println(true);
+		}else {System.out.println(false);}
+		System.out.println(x == y); //true
 		System.out.println(x.equals(y)); // true:String型の比較がequalsを使う 
 		String empty = "";
 		String nullString = null;
