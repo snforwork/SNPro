@@ -6,18 +6,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSV {
-	      //¥«¥ó¥Ş
+	      //ã‚«ãƒ³ãƒ
 	      private static final String COMMA = ",";
-	      //¸ÄĞĞ
+
+	      //æ”¹è¡Œ
 	      private static final String NEW_LINE= "\r\n";
 
 	      public static void main(String[] args) {
-          //Person¥¯¥é¥¹¤Î¥¤¥ó¥¹¥¿¥ó¥¹¤Ë¸÷‚¤òÔO¶¨
+          //Personã‚¯ãƒ©ã‚¹ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã«å„å€¤ã‚’è¨­å®š
 	      Person p1 = new Person("apple", 15, "female");
 	      Person p2 = new Person("banana", 16, "female");
 	      Person p3 = new Person("orange", 17, "male");
 
-	      //¥ê¥¹¥È»¯¤òĞĞ¤¦
+	      //ãƒªã‚¹ãƒˆåŒ–ã‚’è¡Œã†
 	      List<Person> persons = new ArrayList();
 	      persons.add(p1);
 	      persons.add(p2);
@@ -27,7 +28,7 @@ public class CSV {
           try {
 	      fileWriter = new FileWriter("person.csv");
 
-	      //¥ê¥¹¥È¤ÎÄÚÈİ¤òí˜¤Ë„IÀí
+	      //ãƒªã‚¹ãƒˆå†…å®¹ã‚’é †ã«å‡¦ç†
 	      for (Person p : persons) {
 	      fileWriter.append(p.getName());
 	      fileWriter.append(COMMA);
@@ -36,7 +37,7 @@ public class CSV {
 	      fileWriter.append(p.getGender());
 	      fileWriter.append(NEW_LINE);
 	      }
-	      System.out.println("CSV¥Õ¥¡¥¤¥ë³öÁ¦ÍêÁË¡£");
+	      System.out.println("CSVãƒ•ã‚¡ã‚¤ãƒ«å‡ºåŠ›å®Œäº†");
 	      } catch (Exception e) {
 	      e.printStackTrace();
 	      } finally {
@@ -48,6 +49,8 @@ public class CSV {
 	              }
 	    	  }
           }
+
+
 
 
 }
