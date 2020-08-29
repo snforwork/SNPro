@@ -1,49 +1,50 @@
 package co.jp.chapter14;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-
-import co.jp.chapter11.Station;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class JavaChapter14 {
 
 
 	    //14日付――質問集
         //質問1
-	    //質問1: 以下共通メソッドを作成してください。
-	    Date currentDate = new Date();
-	    System.out.println(currentDate);
+	    //以下共通メソッドを作成してください。
+   public static Date[] SEDate(Date start, Date end) {
 
-	    Calendar c = Calendar.getInstance();
-	    c.setTime(currentDate);
-        System.out.println(c.getDate());
-	    List<String> datas = new ArrayList<>();
-	    c.add(2020-03-05);
-	    c.add(2020-03-06);
-	    c.add(2020-03-07);
-	    c.add(2020-03-08);
-	    c.add(2020-03-09);
-	    c.add(2020-03-10);
-	    c.add(2020-03-11);
-	    c.add(2020-03-12);
-	    c.add(2020-03-13);
-	    c.add(2020-03-14);
-	    c.add(2020-03-15);
-	    System.out.println(Date);
+		Date[] result = new Date[2];
 
-	    datas.forEach(data -> {
-	    	Object data;
-			if("2020-03-10".equals(data)) {
-    	    System.out.println("2020-03-10で出力します。");
-	        }
+		if (start != null && !"".equals(start) && end != null
+				&& !"".equals(end)) {
+			result[0] = start;
+			result[1] = end;
+			return result;
+		}
+		return result;
+   }
 
-        });
-	    
-	    
-	    //質問2
-	    //勤務表の集計。以下CSVファイルは「2019年06月度」の勤務期間です。集計してください。
+   public static void main(String[] args) throws ParseException {
+		//SEDate("", "");
+		String sd = "2018/01/01";
+		String sd2 = "2020/01/01";
 
+		SimpleDateFormat s = new SimpleDateFormat("yyyy/mm/dd");
+		Date d1 = s.parse(sd);
+		System.out.println(d1.getTime());
+		Date d2 = s.parse(sd2);
+		System.out.println(d2.getTime());
+
+	}
 
 
 }
+
+
+	    //質問2
+	    //勤務表の集計。以下CSVファイルは「2019年06月度」の勤務期間です。集計してください。
+        //1. 毎日の作業時間（X時間Y分）。（15分切り）
+
+
+
+
+
