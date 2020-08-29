@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import co.jp.chapter11.JavaChapter11;
-
 public class JavaChapter11 {
 
 	public static void main(String[] args) {
