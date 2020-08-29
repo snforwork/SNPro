@@ -1,9 +1,5 @@
 package co.jp.chapter08;
 
-import co.jp.chapter08.Bird;
-import co.jp.chapter08.Cat;
-import co.jp.chapter08.Fish;
-
 public class JavaChapter08 {
 
 	public static void main(String[] args) {
@@ -44,33 +40,63 @@ public class JavaChapter08 {
 		System.out.println(x.equals(y));//true
 		String empty = "";
 		String nullString = null;
-	    //System.out.println(nullString.equals(empty));//false
+	    System.out.println(nullString.equals(empty));//false
 
 		//質問2
 		//以下コードの出力するを回答してください。
 		class Employee {
-	    private String id;
-		public Employee(String id) {
-		this.id = id;
+			private String id;
+		    public Employee(String id) {
+		    	this.id = id;
+		    }
+		    @Override
+		    public boolean equals(Object another) {
+		    	if (another instanceof Employee) {
+		    		Employee an = (Employee) another;
+			        return an.id.equals(id);
+			    }
+			    return false;
+		    }
 		}
-		@Override
-		public boolean equals(Object another) {
-		if (another instanceof Employee) {
-			Employee an = (Employee) another;
-			return an.id.equals(id);
+		//Kicker.java
+		class Kicker {
+			public void main(String...args) {
+				Employee x1 = new Employee("1234");
+                Employee y1 = new Employee("1234");
+		        System.out.println(x1 == y1); //true
+		        System.out.println(x1.equals(y1)); //true
+		    }
+		}
+
+		//質問3
+		//以下コンパイルを修正してください。
+		//Parent.java
+		class Parent{
+			public void hello() {
+				System.out.println("parent method");
 			}
-			return false;
 		}
+		//Child.java
+		class Child extends Parent{
+			@Override //親クラスの強制的にOverrideする意味（アノテーション）
+			public void hello() {
+				System.out.println("child method");
+			}
 		}
-		// Kicker.java
-		//public class Kicker {
-		//public static void main(String...args) {
-		//Employee x1 = new Employee("1234");
-		//Employee y1 = new Employee("1234");
-		//System.out.println(x1 == y1); //true
-		//System.out.println(x1.equals(y1)); //true
-		//}
-		//}
+		//Kicker.java
+		class Kicker1{
+			public void print(Child v) {
+				v.hello();
+			}
+			public void main(String...args) {
+				print(new Parent());
+				print(new Child());
+			}
+			private void print(Parent parent) {
+				// TODO 自動生成されたメソッド・スタブ
+			}
+		}
+
 
 
 
