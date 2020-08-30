@@ -6,6 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSV {
+
+
+	      //宿題
+	      //質問2
+	      //CSV編集ツールを作成してください。
 	      //カンマ
 	      private static final String COMMA = ",";
 
