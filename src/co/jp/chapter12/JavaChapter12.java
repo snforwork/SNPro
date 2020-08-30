@@ -3,6 +3,7 @@ package co.jp.chapter12;
 public class JavaChapter12 {
 
 
+	    //宿題
 	    //12例外――質問集
 	    //質問1
 	    //配列の範囲外を指定している場合、ArrayIndexOutOfBoundsException例外を発生します。該当例外を処理するサンプルコードを書いてください。
