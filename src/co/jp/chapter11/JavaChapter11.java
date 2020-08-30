@@ -140,8 +140,10 @@ public class JavaChapter11 {
         System.out.println(map2);
 
 
+        //宿題
         //11コレクション――質問集
-        //質問1と2
+        //質問1
+        //駅クラス（Station）、路線クラス（Line）を作成して。路線をインスタンス化してオブジェクト「山手線」を作成してください。「山手線」に各駅情報を追加してください。
         Station yamanote = new Station();
         yamanote.setName  ("山手線");
         System.out.println(yamanote.getName());
@@ -154,14 +156,17 @@ public class JavaChapter11 {
 		   datas.add("新橋");
 		   System.out.println(datas);
 
-		   datas.forEach(data -> {
-	       if("新橋".equals(data)) {
+		//質問2
+		//質問1に作成した山手線の駅を foreach 文を繰り返して、新橋駅は路線内であるかを判断する。
+        datas.forEach(data -> {
+        	if("新橋".equals(data)) {
 	    	   System.out.println("新橋駅は路線内である。");
-		   }
+		    }
 
 	    });
 
 		//質問3
+        //10両編成している通勤電車、各車の定員は5人です。31人の乗車の状況をプログラミングしてください。（for文で旅客作成しても構わない）
 		Map<String, List<String>> map3 = new HashMap<>();
 		for (int k = 0; k < 10; k++) {
 			List<String> list4 = new ArrayList<>();
@@ -177,6 +182,8 @@ public class JavaChapter11 {
 	    	System.out.println();
 	    }
 	    System.out.println(map3);
+
+
 
 
 
