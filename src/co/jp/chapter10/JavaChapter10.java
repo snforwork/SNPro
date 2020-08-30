@@ -6,6 +6,7 @@ import java.io.UnsupportedEncodingException;
 public class JavaChapter10 {
 
 public static class getFlieType {
+	    // TODO 自動生成されたメソッド・スタブ
 
 
 	    //10文字列操作――質問集
@@ -16,7 +17,6 @@ public static class getFlieType {
 	      //ペット病院用ペットマスタデータは以下通りです。（ファイルから読み取り不要）※トリム注意
 
 
-
 	    //質問2
 	    //Windowsは各ファイルの拡張子を持っています。例「新規ドキュメント.docx」の拡張子は「docx」である。メソッドを作成して、ファイルパス(String型)から拡張子を取得してください。
         public static String getFileType(String path) {
@@ -24,7 +24,7 @@ public static class getFlieType {
         	// return ??
 	    }
 
-        public static void main(String[] args)throws UnsupportedEncodingException  {
+public static void main(String[] args)throws UnsupportedEncodingException  {
 	    // TODO 自動生成されたメソッド・スタブ
 	    File file = new File("c://windows//aa.xlsx");
 	    File file1 = new File("c://windows//a a.test");
@@ -49,32 +49,75 @@ public static class getFlieType {
 		//System.out.println(getFileType("c://windows//aa.bb.docx")); // docx
 		//System.out.println(getFileType("c://windows//aaaaa")); // Empty
 
+
         //質問3
         //Javaには、全ての文字コードはUTF-8であり。日本語（全角文字）の場合1文字 ＝3バイト。以下文字列のバイト数と桁数を求めてください。
 	    //バイト数は?
-        System.out.println("abcde12345あいうえお１２３４５".getBytes("UTF-8").length);
+        System.out.println("abcde12345あいうえお１２３４５".getBytes("UTF-8").length);//バイト数は40
         //桁数は?
-        System.out.println("abcde12345あいうえお１２３４５".length());
+        System.out.println("abcde12345あいうえお１２３４５".length());//桁数は20
         //format
-        System.out.println(String.format("%05.2f", 123456.99999));
+        System.out.println(String.format("%05.2f", 123456.99999));//123457.00
         //16
         int a = 0x16;
         System.out.println(a);
-        }
+
 
         //質問4
         //各現場は文字列に null又はempty判断要共通メソッドを実装しています。似ているメソッドを実装してください。
-        //valueはnull or Empty判断してください。
-        public static boolean isNull(String value) {
-        	if(value== null || "".equals(value) || "null".equals(value)) {
-        		return true;
-        	} else {
-        		return false;
-        	}
-        }
+        //value はnull or Empty判断してください。
+        //public static boolean isNull(String str) {
+            //return str == null ? true : false;
+        //}
+
+        //public static boolean isNullOrBlank(String param) {
+            //if (isNull(param) || param.trim().length() == 0) {
+                //return true;
+            //}
+            //return false;
+        //}
+
+
+        //質問5
+        //以下仕様のフォーマティング指示コードを作成してくだい。
+        //1.浮動小数点数
+        	int one = 1234567;
+        	float two = 1234567.99999F;
+        	System.out.println(String.format("one=%,d two=%,.2f", one, two));
+         	//one = 1,234,567 two = 1,234,568.00
+
+        //2.長さは5桁数
+        System.out.println("あいうえお".length());
+
+        //3.精度は小数点後2位
+    	float three = 1234.99999F;
+    	System.out.println(String.format("three = %,.2f", three));
+    	//three = 1,235.00
+
+
+    	//質問6
+    	//整数16の16進数をSystem.out.println()してください。
+    	int i = 16;
+    	//int値を16進数表記に変換する
+    	System.out.println("16進数：" + Integer.toHexString(i));//16進数表記に変換
+
+
+
+
+
+
+
 
 
 
 }
 
+
+
+
 }
+
+
+}
+
+
