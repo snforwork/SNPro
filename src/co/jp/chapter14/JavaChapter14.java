@@ -2,7 +2,6 @@ package co.jp.chapter14;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class JavaChapter14 {
 
@@ -10,9 +9,9 @@ public class JavaChapter14 {
 	    //14日付――質問集
         //質問1
 	    //以下共通メソッドを作成してください。
-   public static Date[] SEDate(Date start, Date end) {
+public static eachEveryday[] SEeachEveryday(eachEveryday start, eachEveryday end) {
 
-		Date[] result = new Date[2];
+		eachEveryday[] result = new eachEveryday[2];
 
 		if (start != null && !"".equals(start) && end != null
 				&& !"".equals(end)) {
@@ -21,20 +20,21 @@ public class JavaChapter14 {
 			return result;
 		}
 		return result;
-   }
+}
 
-   public static void main(String[] args) throws ParseException {
-		//SEDate("", "");
+        @SuppressWarnings("null")
+public static void main(String[] args) throws ParseException {
+		//SEeachEveryday("", "");
 		String sd = "2018/01/01";
 		String sd2 = "2020/01/01";
 
 		SimpleDateFormat s = new SimpleDateFormat("yyyy/mm/dd");
-		Date d1 = s.parse(sd);
+		eachEveryday d1 = null;
 		System.out.println(d1.getTime());
-		Date d2 = s.parse(sd2);
+		eachEveryday d2 = null;
 		System.out.println(d2.getTime());
+}
 
-	}
 
 
 }
