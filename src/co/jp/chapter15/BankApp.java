@@ -14,7 +14,7 @@ public class BankApp {
 	    public static void main(String[] args) {
 			    while(true){
 			    	int select=getInputInt("1. 新規口座作成 / 2. 預入 / 3. 引出 / 4.預入総額表示 / 5. 終了>");
-				switch(select) {
+				    switch(select) {
         //case1:
 	    Account acc=new Account(
                 getInputInt("口座番号を入力して下さい >"),
@@ -22,6 +22,7 @@ public class BankApp {
 	            getInputInt("初期預入金額を入力して下さい >")
 	    );
 	    list.add(acc);
+				    }
 	    break;
 
 	    //case2:
@@ -58,8 +59,7 @@ public class BankApp {
 	    System.out.println("アプリケーションを終了しました。");
 	    return;
 
-				}
-	    }
+	            }
 
 	    public static int getInputInt(String msg){
 	    	System.out.print(msg);
@@ -81,5 +81,5 @@ public class BankApp {
 
 
 
-
 }
+
