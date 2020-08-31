@@ -8,12 +8,12 @@ public class HomeWork10 {
 		// TODO 自動生成されたメソッド・スタブ
 	//質問１︓以下３⾏⽂字列を「改⾏コード」と「,」を分割して２つペットオブジェクトを作成してください。
 			
-		String str1 = new String("name, age, type");
+//		String str1 = new String("name, age, type");
 		String str2 = new String("みみ,10,1");
 		String str3 = new String("レオ,1,0");
 		String str4 = new String("マル,2,0");
 		
-		String[] arr= str1.split(",");
+//		String[] arr= str1.split(",");
 		
 		String[] arr1= str2.split(",");
 
