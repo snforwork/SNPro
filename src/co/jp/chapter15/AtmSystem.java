@@ -1,4 +1,4 @@
-package co.jo.chapter15;
+package co.jp.chapter15;
 
 import java.util.Scanner;
 
