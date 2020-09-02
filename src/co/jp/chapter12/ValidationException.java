@@ -10,8 +10,9 @@ public class ValidationException extends Exception {
 	public static void dosomething(String input) throws MyException {
 		if (input.equals("123")) {
 			// 例外をthrowする
-			throw new MyException("カスタマイズ例外");
+			throw new MyException("半角英数字を入力してください");
 			}
 	}
+	
 }
 
