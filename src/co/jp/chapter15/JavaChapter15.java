@@ -60,7 +60,7 @@ public class JavaChapter15 {
 			}else {
 				System.out.println("入力された口座番号、又はパスワードが誤っています。");
 			}
-		}while (time>0);
+		}while (time>0);//ss
 	}
 
 }
