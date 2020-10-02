@@ -1,7 +1,9 @@
 package co.jp.chapter11;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HomeWork1 {
 
@@ -31,22 +33,37 @@ public class HomeWork1 {
 		/**質問３︓10両編成している通勤電⾞、各⾞の定員は5⼈です。31⼈の乗⾞の状況をプログラミングし
 てください。（for⽂で旅客作成しても構わない）*/
 		
-		
-		for(int i=0;i<10;i++) {
-			List<String> List = new ArrayList<>();
-			for(int j =0;j<5;j++) {
-				List.add(String.valueOf(i*5+j+1));
-//				System.out.println(List);
-				if((i*5+j+1)<32) {
-					System.out.println("人");
-				}else {
-					System.out.println("空");
+		Map<String, List<String>> map = new HashMap<>();
+		for (int i = 0; i < 10; i++) {
+			List<String> list = new ArrayList<>();
+			for(int n = 0; n < 5; n++) {
+				list.add(String.valueOf(i*5+n+1));
+				if( (i*5+n+1) <=31) {
+					System.out.print("人");
+			    }else {
+					System.out.print("空");
 				}
-			}
-			
-			
-			
-		}
+	    	}
+	    	map.put(String.valueOf(i+1),list);
+	    	System.out.println();
+	    }
+	    System.out.println(map);
+		
+//		for(int i=0;i<10;i++) {
+//			List<String> List = new ArrayList<>();
+//			for(int j =0;j<5;j++) {
+//				List.add(String.valueOf(i*5+j+1));
+////				System.out.println(List);
+//				if((i*5+j+1)<32) {
+//					System.out.println("人");
+//				}else {
+//					System.out.println("空");
+//				}
+//			}
+//		}
+
+
+ }
 	}
 
-}
+

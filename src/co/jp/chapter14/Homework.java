@@ -23,59 +23,10 @@ public class Homework {
 			c.add(Calendar.DATE,1);
 			date = c.getTime();
 		}
-		 //start时间
-//		  String str="2017-08-05"; 
-		  //end时间
-//		  String str1="2017-08-10";
-//		  String str="2015-08-31 21:08:06";
-//          SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//          Date date = (Date) sdf.parse(str);
-         
-//		Date currentDate = new Date();
-//		System.out.println(currentDate);
-//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");  
-//		Calendar start = Calendar.getInstance();
-//		Calendar end = Calendar.getInstance();
-//		Calendar calendar = Calendar.getInstance();
-//		Date date = (Date) format.parse(str);
-//		 System.out.println(date.getTime());
-//		start.setTime(str1);
-//		System.out.println(start);
-//		try {
-//			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-			
-//			Date date1 = (Date)format.parse(str);
-//			Date date2 = format.parse(str1);
 
-//			System.out.println(date);
-//			} catch (ParseException ex) {
-//			Logger.getLogger(FileStreamSample.class.getName()).log(Level.SEVERE, null, ex);
-			}
-//		TRY {
-//		    START.SETTIME(FORMAT.PARSE(STR));
-//		    END.SETTIME(FORMAT.PARSE(STR1));
-//		  } CATCH (JAVA.TEXT.PARSEEXCEPTION E) {
-//		    E.PRINTSTACKTRACE();
-//		  }
-//		while(date1.before(date2))
-//		  {
-//			 start.add(Calendar.DAY_OF_MONTH,1);
-//		      System.out.println(start.getTime());
-//		     
-//		  }
-//		DateFormat beginDate= new SimpleDateFormat("2020-06-25");
-//		DateFormat endDate= new SimpleDateFormat("2020-06-29");
-//		DateFormat date = beginDate;
-//		if (!date.equals(endDate)) {
-//	        System.out.println(beginDate);
-//	    }else {
-//	    	System.out.println(dateString);
-//	    }
 
 	//質問２︓勤務表の集計。以下CSVファイルは「2019年06⽉度」の勤務期間です。集計してください。
 	
 	}
 
-	
-
-//}
+}

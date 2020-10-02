@@ -10,40 +10,12 @@ public class HomeWork8 {
 		if(x == y){
 			System.out.println(true);
 		}else {System.out.println(false);}
-		System.out.println(x == y); //true
+		System.out.println(x == y); //true:false:メモリアドレスは一致します。 
 		System.out.println(x.equals(y)); // true:String型の比較がequalsを使う 
-		String empty = "";
-		String nullString = null;
-	//	System.out.println(nullString.equals(empty)); // false:""はオブジェクト、nullはオブジェクトではありません
-/**質問2**/
-		/**public class Employee {
-			private String id;
-			public Employee(String id) {
-			this.id = id;
-			}
-			@Override
-			public boolean equals(Object another) {
-			if (another instanceof Employee)
-				Employee an = (Employee) another;
-			return an.id.equals(id);
-			}
-			return false;
-			}
-			}
-			// Kicker.java
-			public class Kicker {
-			public static void main(String...args) {
-			Employee x = new Employee("1234");
-			Employee y = new Employee("1234");
-			System.out.println(x == y); // true:メモリアドレスは一致します。
-			System.out.println(x.equals(y)); // true:String型の比較がequalsを使う
-			}
-			}*/
+
 /**質問３**/
 		/**public class Parent {
-	public void hello() {
-		System.out.println("parent method");
-	}
+	
 	}
 	// Child.java
 	public class Child extends Parent {

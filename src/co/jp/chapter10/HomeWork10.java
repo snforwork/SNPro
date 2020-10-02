@@ -8,34 +8,34 @@ public class HomeWork10 {
 		// TODO 自動生成されたメソッド・スタブ
 	//質問１︓以下３⾏⽂字列を「改⾏コード」と「,」を分割して２つペットオブジェクトを作成してください。
 			
-//		String str1 = new String("name, age, type");
-		String str2 = new String("みみ,10,1");
-		String str3 = new String("レオ,1,0");
-		String str4 = new String("マル,2,0");
-		
-//		String[] arr= str1.split(",");
-		
-		String[] arr1= str2.split(",");
-
-		if(arr1[2].equals("1")) {
-			System.out.println("みみは" +" 犬");
-		}else {
-			System.out.println("みみは" +" 猫");
-		}
-		
-		String[] arr2= str3.split(",");
-		if(arr2[2].equals("1")) {
-			System.out.println("レオは" +" 犬");
-		}else {
-			System.out.println("レオは" +" 猫");
-		}
-		
-		String[] arr3= str4.split(",");
-		if(arr3[2].equals("1")) {
-			System.out.println("マルは" +" 犬");
-		}else {
-			System.out.println("マルは" +" 猫");
-		}
+////		String str1 = new String("name, age, type");
+//		String str2 = new String("みみ,10,1");
+//		String str3 = new String("レオ,1,0");
+//		String str4 = new String("マル,2,0");
+//		
+////		String[] arr= str1.split(",");
+//		
+//		String[] arr1= str2.split(",");
+//
+//		if(arr1[2].equals("1")) {
+//			System.out.println("みみは" +" 犬");
+//		}else {
+//			System.out.println("みみは" +" 猫");
+//		}
+//		
+//		String[] arr2= str3.split(",");
+//		if(arr2[2].equals("1")) {
+//			System.out.println("レオは" +" 犬");
+//		}else {
+//			System.out.println("レオは" +" 猫");
+//		}
+//		
+//		String[] arr3= str4.split(",");
+//		if(arr3[2].equals("1")) {
+//			System.out.println("マルは" +" 犬");
+//		}else {
+//			System.out.println("マルは" +" 猫");
+//		}
 //	質問２︓Windowsは各ファイルの拡張⼦を持っています。例 「新規ドキュメント.docx」の拡張⼦は
 //		「docx」である。メソッドを作成して、ファイルパス（String型）から拡張⼦を取得してください。
 		
@@ -61,8 +61,10 @@ public class HomeWork10 {
 //質問３︓Javaには、すべての⽂字コードはUTF-8であり。⽇本語（全⾓⽂字）の場合１⽂字 = 3バイ
 //		ト。以下⽂字列のバイト数と桁数を求めてください。
 		String value = "abced12345あいうえお１２３４５";
-		System.out.println("abced12345あいうえお１２３４５"+"  の行数　: "+ value.length());
-	
+		//バイト数
+		System.out.println("abced12345あいうえお１２３４５"+"  の行数　: "+ value.getBytes().length);
+		//桁数
+        System.out.println(value.length());
 //質問４︓各現場は⽂字列に null ⼜は empty 判断要共通メソッドを実装しています。似ているメソッ
 //を実装してください。
 		String value1="";
@@ -91,17 +93,18 @@ public class HomeWork10 {
 			System.out.println("value3は" +" 値がある；");
 		}**/
 //	質問５︓以下仕様のフォーマティング指⽰コードを作成してくだい。
-		double a = 2412.232;
-		short b =(short) 1111111111;
-		//(1)
-		String stra = String.format("%1.20f", a);
-			System.out.println(stra);
-		//(2)
-		String strb = String.format("%05d", b);
-			System.out.println(strb);
-		//(3)
-		String strc = String.format("%.2f", a);
-		    System.out.println(strc);
+		System.out.println(String.format("%05.2f", 111111.111111));
+//		double a = 2412.232;
+//		short b =(short) 1111111111;
+//		//(1)
+//		String stra = String.format("%1.20f", a);
+//			System.out.println(stra);
+//		//(2)
+//		String strb = String.format("%05d", b);
+//			System.out.println(strb);
+//		//(3)
+//		String strc = String.format("%.2f", a);
+//		    System.out.println(strc);
 //質問６︓整数16の16進数をSystem.out.println()してください。
 		    int i=16;
 		    System.out.println(Integer.toHexString(i));
