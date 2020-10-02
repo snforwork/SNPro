@@ -9,11 +9,36 @@ public static class getFlieType {
 
 
 	    //10文字列操作――質問集
-	    //質問1
-	    //以下3行文字列を「改行コード」と「,」を分割して2つペットオブジェクトを作成してください。
-	      //1. Petクラスを事前作成してください。
-	      //2. ペットのタイプは列挙型である： type = 0：猫、type = 1：犬
-	      //ペット病院用ペットマスタデータは以下通りです。（ファイルから読み取り不要）※トリム注意
+	//質問１︓以下３⾏⽂字列を「改⾏コード」と「,」を分割して２つペットオブジェクトを作成してください。
+
+//	String str1 = new String("name, age, type");
+//	String str2 = new String("みみ,10,1");
+//	String str3 = new String("レオ,1,0");
+//	String str4 = new String("マル,2,0");
+
+//	String[] arr= str1.split(",");
+
+//	String[] arr1= str2.split(",");
+
+//	if(arr1[2].equals("1")) {
+//		System.out.println("みみは" +" 犬");
+//	}else {
+//		System.out.println("みみは" +" 猫");
+//	}
+//
+//	String[] arr2= str3.split(",");
+//	if(arr2[2].equals("1")) {
+//		System.out.println("レオは" +" 犬");
+//	}else {
+//		System.out.println("レオは" +" 猫");
+//	}
+//
+//	String[] arr3= str4.split(",");
+//	if(arr3[2].equals("1")) {
+//		System.out.println("マルは" +" 犬");
+//	}else {
+//		System.out.println("マルは" +" 猫");
+//	}
 
 
 
