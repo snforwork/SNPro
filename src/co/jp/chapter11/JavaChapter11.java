@@ -161,25 +161,28 @@ public class JavaChapter11 {
 
 	    });
 
-		//質問3
-		Map<String, List<String>> map3 = new HashMap<>();
-		for (int k = 0; k < 10; k++) {
-			List<String> list4 = new ArrayList<>();
-			for(int n = 0; n < 5; n++) {
-				list4.add(String.valueOf(k*5+n+1));
-				if( (k*5+n+1) <=31) {
-					System.out.print("人");
-			    }else {
-					System.out.print("空");
-				}
-	    	}
-	    	map3.put(String.valueOf(k+1),list4);
-	    	System.out.println();
+			//質問3
+	        //10両編成している通勤電車、各車の定員は5人です。31人の乗車の状況をプログラミングしてください。（for文で旅客作成しても構わない）
+			Map<String, List<String>> map3 = new HashMap<>();
+			for (int k = 0; k < 10; k++) {
+				List<String> list4 = new ArrayList<>();
+				for(int n = 0; n < 5; n++) {
+					list4.add(String.valueOf(k*5+n+1));
+					if( (k*5+n+1) <=31) {
+						System.out.print("人");
+				    }else {
+						System.out.print("空");
+					}
+		    	}
+		    	map3.put(String.valueOf(k+1),list4);
+		    	System.out.println();
+		    }
+		    System.out.println(map3);
+
+
+
+
+
 	    }
-	    System.out.println(map3);
 
-
-
-    }
-
-}
+	}
