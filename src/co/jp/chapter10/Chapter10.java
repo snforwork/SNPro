@@ -59,9 +59,17 @@ public class Chapter10 {
 		System.out.println(FileType4);
 
 //質問３︓Javaには、すべての⽂字コードはUTF-8であり。⽇本語（全⾓⽂字）の場合１⽂字 = 3バイ
-//		ト。以下⽂字列のバイト数と桁数を求めてください。
-		String value = "abced12345あいうえお１２３４５";
-		System.out.println("abced12345あいうえお１２３４５"+"  の行数　: "+ value.length());
+//		//Javaには、全ての文字コードはUTF-8であり。日本語（全角文字）の場合1文字 ＝3バイト。以下文字列のバイト数と桁数を求めてください。
+//	    //バイト数は?
+//        System.out.println("abcde12345あいうえお１２３４５".getBytes("UTF-8").length);
+//        //桁数は?
+//        System.out.println("abcde12345あいうえお１２３４５".length());
+//        //format
+//        System.out.println(String.format("%05.2f", 123456.99999));
+//        //16
+//        int a = 0x16;
+//        System.out.println(a);
+//        }
 
 //質問４︓各現場は⽂字列に null ⼜は empty 判断要共通メソッドを実装しています。似ているメソッ
 //を実装してください。

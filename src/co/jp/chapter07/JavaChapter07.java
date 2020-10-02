@@ -1,5 +1,7 @@
 package co.jp.chapter07;
 
+import java.util.Arrays;
+
 public class JavaChapter07 {
 
 	public static void main(String[] args) {
@@ -108,11 +110,14 @@ public class JavaChapter07 {
 //   			}
 
 //   	/**質問２*/
-   	int[] arr = new int[] {1,5,8,6,2};
-   		System.out.println(Math.max(arr));
-   		System.out.println(Math.min(arr));
-   		System.out.println(Math.ave(arr));
-   	}
+//      	/**質問２*/
+   	   	int[] arr = new int[] {1,5,8,6,2};
+   	   	System.out.println("sort 前"+ Arrays.toString(arr));
+      		System.out.println(Math.max(arr));
+      		System.out.println(arr[0]);
+      		System.out.println("sort 後"+ Arrays.toString(arr));
+      		System.out.println(Math.min(arr));
+      		System.out.println(Math.ave(arr));
 
 
 
@@ -124,6 +129,7 @@ public class JavaChapter07 {
 
 
 
+	}
 
 
 }

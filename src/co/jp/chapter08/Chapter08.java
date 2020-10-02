@@ -38,8 +38,8 @@ public class Chapter08 {
       //質問１
 		String x = "a";
 		String y = "a";
-		System.out.println(x == y); // false:メモリアドレスは一致しません。
-		System.out.println(x.equals(y)); // true:String型の比較がequalsを使う
+		System.out.println(x == y); // true:String型の比較がequalsを使う
+		System.out.println(x.equals(y)); //false:メモリアドレスは一致しません。
 		String empty = "";
 		String nullString = null;
 	//	System.out.println(nullString.equals(empty)); false:""はオブジェクト、nullはオブジェクトではありません
@@ -63,7 +63,7 @@ public class Chapter08 {
 			public static void main(String...args) {
 			Employee x = new Employee("1234");
 			Employee y = new Employee("1234");
-			System.out.println(x == y); // true:メモリアドレスは一致します。
+			System.out.println(x == y); // false:メモリアドレスは一致しません。
 			System.out.println(x.equals(y)); // true:String型の比較がequalsを使う
 			}
 			}*/
@@ -76,18 +76,18 @@ public class Chapter08 {
 	// Child.java
 	public class Child extends Parent {
 	@Override // 親クラスの強制的にOverrideする意味（アノテーション）
-
+       public void hello() {
 	System.out.println("child method");
-
+       }
 	}
 	// Kicker.java
 	public class Kicker {
-		public static void print(Child v) {
+		public static void print(parent v) {
 			v.hello();
 	}
 	public static void main(String...args) {
-		Parent a= new Parent();
-		Child b = new Child();
+		print(new Parent());
+		print(new Child());
 		}
 }
 */
