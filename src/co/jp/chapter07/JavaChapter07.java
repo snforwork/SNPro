@@ -154,50 +154,33 @@ public class JavaChapter07 {
 
 				//07OOP-その1――質問集
 		        //質問1
-			    //public class Pet {
-			    //public String name;
-				//this.name = value;
-				//}
-				// Kicker.java
-				//Pet cat = new Pet();
-				//cat.setAge(1234);
-				//}
-				//}
+		       //定義されないメソッドsetAge(1234)をアクセスする。
+//		public class Pet {
+//			public String name;
+//			public void setName(String value) {
+//			this.name = value;
+//			}
+//			}
+//			// Kicker.java
+//			public class Kicker {
+//			public static void main(String...args) {
+//			Pet cat = new Pet();
+//			cat.setAge(1234);
+//
+//			}
+//			}
 
-				//質問2
-//			    int[] arr = new int[] {1,5,8,6,2};
-//				System.out.println(Math.max(arr));
-//				System.out.println(Math.min(arr));
-//				System.out.println(Math.ave(arr));
-
-
-
-		        //1
-
-				int[] arr = {0,3,2,4,1,-1,-100};
-				System.out.println("sort 前"+Arrays.toString(arr));
-				System.out.println(JavaChapter07.max(arr));
-				System.out.println(arr[0]);
-				System.out.println("sort 後"+Arrays.toString(arr));
-
-
-
+		/**質問２*/
+   	   	int[] arr = new int[] {1,5,8,6,2};
+   	   	System.out.println("sort 前"+ Arrays.toString(arr));
+      		System.out.println(Math.max(arr));
+      		System.out.println(arr[0]);
+      		System.out.println("sort 後"+ Arrays.toString(arr));
+      		System.out.println(Math.min(arr));
+      		System.out.println(Math.ave(arr));
 
 
 	}
-
-				public static int max(int[] arr) {
-
-					int rtn;
-
-					int[] arrtemp = new int[arr.length];
-					for (int i =0;i<arr.length ;i++) {
-						arrtemp[i] = arr[i];
-					}
-					Arrays.sort(arrtemp);
-					return arrtemp[arrtemp.length-1];
-				}
-
 
 
 }

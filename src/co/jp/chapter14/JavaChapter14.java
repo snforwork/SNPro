@@ -1,45 +1,74 @@
 package co.jp.chapter14;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+
 
 public class JavaChapter14 {
 
+	public static void main(String[] args) throws ParseException {
+		// TODO 自動生成されたメソッド・スタブ
+//質問１︓以下共通メソッドを作成してください。
+		Calendar c = Calendar.getInstance();
 
-	    //14日付――質問集
-        //質問1
-	    //以下共通メソッドを作成してください。
-   public static Date[] SEDate(Date start, Date end) {
-
-		Date[] result = new Date[2];
-
-		if (start != null && !"".equals(start) && end != null
-				&& !"".equals(end)) {
-			result[0] = start;
-			result[1] = end;
-			return result;
+		DateFormat dateFormat1 = new SimpleDateFormat("yyyy-MM-dd");
+		Date beginDate = dateFormat1.parse("2014-05-01");
+		Date endDate = dateFormat1.parse("2014-06-25");
+		Date date= beginDate;
+		while(!date.equals(endDate)) {
+			System.out.println(date);
+			c.setTime(date);
+			c.add(Calendar.DATE,1);
+			date = c.getTime();
 		}
-		return result;
-   }
+		 //start时间
+//		  String str="2017-08-05";
+		  //end时间
+//		  String str1="2017-08-10";
+//		  String str="2015-08-31 21:08:06";
+//          SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//          Date date = (Date) sdf.parse(str);
 
-   public static void main(String[] args) throws ParseException {
-		//SEDate("", "");
-		String sd = "2018/01/01";
-		String sd2 = "2020/01/01";
+//		Date currentDate = new Date();
+//		System.out.println(currentDate);
+//		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+//		Calendar start = Calendar.getInstance();
+//		Calendar end = Calendar.getInstance();
+//		Calendar calendar = Calendar.getInstance();
+//		Date date = (Date) format.parse(str);
+//		 System.out.println(date.getTime());
+//		start.setTime(str1);
+//		System.out.println(start);
+//		try {
+//			SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-		SimpleDateFormat s = new SimpleDateFormat("yyyy/mm/dd");
-		Date d1 = s.parse(sd);
-		System.out.println(d1.getTime());
-		Date d2 = s.parse(sd2);
-		System.out.println(d2.getTime());
+//			Date date1 = (Date)format.parse(str);
+//			Date date2 = format.parse(str1);
 
-	}
-
-
-}
-
-
-	    //質問2
-	    //勤務表の集計。以下CSVファイルは「2019年06月度」の勤務期間です。集計してください。
-        //1. 毎日の作業時間（X時間Y分）。（15分切り）
+//			System.out.println(date);
+//			} catch (ParseException ex) {
+//			Logger.getLogger(FileStreamSample.class.getName()).log(Level.SEVERE, null, ex);
+//			}
+//		TRY {
+//		    START.SETTIME(FORMAT.PARSE(STR));
+//		    END.SETTIME(FORMAT.PARSE(STR1));
+//		  } CATCH (JAVA.TEXT.PARSEEXCEPTION E) {
+//		    E.PRINTSTACKTRACE();
+//		  }
+//		while(date1.before(date2))
+//		  {
+//			 start.add(Calendar.DAY_OF_MONTH,1);
+//		      System.out.println(start.getTime());
+//
+//		  }
+//		DateFormat beginDate= new SimpleDateFormat("2020-06-25");
+//		DateFormat endDate= new SimpleDateFormat("2020-06-29");
+//		DateFormat date = beginDate;
+//		if (!date.equals(endDate)) {
+//	        System.out.println(beginDate);
+//	    }else {
+//	    	System.out.println(dateString);
+	    }}
